@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+// styles.less
+
+@primary-color: #0d22da;
+@hover-color: darken(@primary-color, 10%);
+@text-color: #ffffff;
+
+// Global button styles for all p-button components
+.p-button {
+  background-color: @primary-color;
+  border: none;
+  color: @text-color;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: @hover-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem fade(@primary-color, 30%);
+  }
+
+  &:disabled {
+    background-color: lighten(@primary-color, 20%);
+    cursor: not-allowed;
+  }
+}
+
