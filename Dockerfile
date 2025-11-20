@@ -13,6 +13,6 @@ RUN npm run build -- --configuration ${BUILD_CONFIGURATION}
 FROM nginx:1.27-alpine AS runtime
 RUN apk add --no-cache curl
 COPY docker/nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/dist/samval-ui/browser /usr/share/nginx/html
+COPY --from=build /app/dist/samval-ui/browser/ /usr/share/nginx/html
 EXPOSE 80
 HEALTHCHECK CMD curl --fail http://localhost/ || exit 1
