@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+Dockerfile*
+dist
+.tmp
+tmp
+.git
+.gitignore
+.idea
+.vscode
+coverage
+**/.DS_Store

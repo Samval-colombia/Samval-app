@@ -12,3 +12,8 @@ Sigue los pasos a continuación para instalar y ejecutar Samval App en tu entorn
 - Angular CLI (v19.0.10)
   ```bash
   npm install -g @angular/cli
+  ```
+
+## 📦 Despliegue en Dockploy
+
+Consulta `docs/dokploy-setup.md` para seguir el proceso completo de contenedorización con Docker y despliegue en Dockploy (Applications o Docker Compose).
